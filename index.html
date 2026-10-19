@@ -15,7 +15,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=Sora:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Sora:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
 
 <style>
 /* ---------- Tokens (swap these to re-theme) ---------- */
@@ -115,7 +115,7 @@ main > section.facts { padding-bottom: 8px; }
 .brand-icon { flex: none; width: 40px; height: 40px; border-radius: var(--radius); }
 .brand-leaf { flex: none; width: 24px; height: 24px; color: var(--leaf); }
 .wordmark { display: grid; gap: 6px; line-height: 1; justify-items: center; text-align: center; }
-.wordmark-main { display: inline-flex; align-items: center; gap: 8px; font: italic 600 1.7rem/1 "Fraunces", Georgia, serif; letter-spacing: -.01em; color: var(--ink); }
+.wordmark-main { display: inline-flex; align-items: center; gap: 8px; font: 400 1.45rem/1 "Bevan", Georgia, serif; letter-spacing: .01em; color: var(--ink); }
 .wordmark-sub { display: flex; align-items: center; justify-content: center; gap: 8px; font: 800 .6rem/1 "Nunito Sans", sans-serif; letter-spacing: .26em; text-transform: uppercase; color: var(--leaf); white-space: nowrap; }
 .wordmark-sub::before, .wordmark-sub::after { content: ""; width: 14px; height: 1px; background: currentColor; }
 .wordmark-sub.loc { color: var(--ink-soft); letter-spacing: .4em; font-weight: 600; }
@@ -124,7 +124,7 @@ main > section.facts { padding-bottom: 8px; }
 .foot-brand { display: grid; justify-items: center; text-align: center; }
 .foot-brand .foot-blurb { margin-inline: auto; }
 .brand-stack .brand-leaf { width: 34px; height: 34px; }
-.brand-stack .wordmark-main { font-size: 2.3rem; }
+.brand-stack .wordmark-main { font-size: 2rem; }
 @media (max-width: 380px) { .wordmark-main { font-size: 1.5rem; } .wordmark-sub { letter-spacing: .18em; } .wordmark-sub::before, .wordmark-sub::after { width: 8px; } }
 .nav-desktop { display: none; }
 .head-cta { display: none; }
@@ -430,7 +430,7 @@ html { scroll-behavior: smooth; }
 .services-grid .svc::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(4, 22, 14, .38) 0%, rgba(4, 22, 14, .58) 40%, rgba(4, 22, 14, .9) 100%); }
 .services-grid .svc-body h3, .services-grid .svc-body p { text-shadow: 0 1px 14px rgba(0, 0, 0, .6); }
 .services-grid .svc-body { flex: none; padding: 26px 24px 26px; color: #eef6e9; }
-.services-grid .svc-body h3 { font: italic 600 clamp(1.8rem, 6vw, 2.2rem)/1.05 "Fraunces", Georgia, serif; letter-spacing: 0; color: #eef6e9; }
+.services-grid .svc-body h3 { font: 400 clamp(1.5rem, 5.2vw, 1.9rem)/1.1 "Bevan", Georgia, serif; letter-spacing: 0; color: #eef6e9; }
 .services-grid .svc-body p { color: #d3e5d7; margin-top: 8px; max-width: 46ch; }
 .services-grid .chips { margin-top: 16px; gap: 8px; }
 .services-grid .chips li { background: rgba(6, 36, 22, .62); border-color: rgba(243, 248, 238, .22); color: #eef6e9; font-size: .9rem; padding: 7px 13px; backdrop-filter: blur(3px); }
@@ -448,11 +448,11 @@ html { scroll-behavior: smooth; }
 .fab-wa:hover { background: #3be07a; }
 .fab .fab-ico { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 /* steps: timeline */
-.process h2 { max-width: none; text-align: center; font: italic 600 clamp(2.4rem, 8vw, 3.8rem)/1.05 "Fraunces", Georgia, serif; letter-spacing: -.01em; text-shadow: 0 2px 18px rgba(0, 0, 0, .45); }
+.process h2 { max-width: none; text-align: center; font: 400 clamp(2rem, 7vw, 3.2rem)/1.1 "Bevan", Georgia, serif; letter-spacing: 0; text-shadow: 0 2px 18px rgba(0, 0, 0, .45); }
 .process-list { margin-top: 44px; gap: 30px; }
 .process-list li { position: relative; display: grid; grid-template-columns: 52px 1fr; column-gap: 18px; align-items: start; padding: 0; background: none; border: 0; }
 .process-list li .p-ico { grid-row: 1 / span 2; margin: 0; position: relative; z-index: 1; }
-.process-list h3 { font: italic 600 1.6rem/1.1 "Fraunces", Georgia, serif; letter-spacing: 0; align-self: end; text-shadow: 0 1px 12px rgba(0, 0, 0, .5); }
+.process-list h3 { font: 400 1.4rem/1.15 "Bevan", Georgia, serif; letter-spacing: 0; align-self: end; text-shadow: 0 1px 12px rgba(0, 0, 0, .5); }
 .process-list p { margin-top: 6px; line-height: 1.55; text-shadow: 0 1px 12px rgba(0, 0, 0, .5); }
 .process-list li:not(:last-child)::after { content: ""; position: absolute; left: 25px; top: 56px; bottom: -22px; width: 2px; background: linear-gradient(180deg, var(--leaf), rgba(143, 224, 107, .25)); }
 @media (min-width: 1024px) {
