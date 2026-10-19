@@ -121,8 +121,14 @@ main > section.facts { padding-bottom: 8px; }
 .wordmark-sub.loc { color: var(--ink-soft); letter-spacing: .4em; font-weight: 600; }
 .wordmark-sub.loc::before, .wordmark-sub.loc::after { display: none; }
 .brand-stack { justify-content: center; }
-.brand-logo { height: 52px; width: auto; display: block; }
-.brand-logo-foot { height: 124px; }
+.wm { display: grid; gap: 6px; line-height: 1; justify-items: start; }
+.wm-main { font: 400 1.5rem/1 "Bevan", Georgia, serif; letter-spacing: .02em; color: var(--ink); white-space: nowrap; }
+.wm-main i { font-style: normal; color: var(--leaf); font-size: .8em; vertical-align: .08em; }
+.wm-sub { font: 800 .58rem/1 "Nunito Sans", sans-serif; letter-spacing: .26em; text-transform: uppercase; color: var(--leaf); white-space: nowrap; }
+.brand-stack .wm { justify-items: center; gap: 8px; }
+.brand-stack .wm-main { font-size: 2rem; }
+.brand-stack .wm-sub { font-size: .66rem; }
+@media (max-width: 380px) { .wm-main { font-size: 1.3rem; } .wm-sub { letter-spacing: .18em; } }
 .foot-brand { display: grid; justify-items: center; text-align: center; }
 .foot-brand .foot-blurb { margin-inline: auto; }
 .brand-stack .brand-leaf { width: 34px; height: 34px; }
@@ -536,7 +542,7 @@ footer .foot-contact ul, footer .foot-jump ul { justify-content: center; justify
 <header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="#top" aria-label="New Star Tree Felling Company, home">
-      <img class="brand-logo" src="img/logo-white.png" width="541" height="399" alt="" decoding="async">
+      <span class="wm"><span class="wm-main">NEW <i aria-hidden="true">&#9733;</i> STAR</span><span class="wm-sub">Tree Felling Company</span></span>
     </a>
     <nav class="nav-desktop" aria-label="Main">
       <a href="#services">Services</a>
@@ -795,7 +801,7 @@ footer .foot-contact ul, footer .foot-jump ul { justify-content: center; justify
     <div class="foot-grid">
       <div class="foot-brand">
         <a class="brand brand-stack" href="#top">
-      <img class="brand-logo brand-logo-foot" src="img/logo-white.png" width="541" height="399" alt="" decoding="async">
+      <span class="wm"><span class="wm-main">NEW <i aria-hidden="true">&#9733;</i> STAR</span><span class="wm-sub">Tree Felling Company</span></span>
     </a>
         <p class="foot-blurb" style="margin-top:10px;max-width:34ch;font-size:.95rem">Tree felling, pruning and stump removal in Johannesburg and surrounds.</p>
       </div>
